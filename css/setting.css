@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #ff817e;
+    --secondary-color: #263a41;
+    --gray-dark: #263a41;
+    --gray-light: #888;
+    --white: white;
+    --black: black;
+    --bg-block: #fff8f9;
+    --primary-font: "Roboto";
+    --secondary-font: "Rufina";
+    --wrapper: 192rem;
+    --container: 117rem;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box; /* padding and border are included in the width and height */
+    /* with/height + padding + border = actual with/height (without box-sizing: ;) */
+    /* initial  */
+    /* inherit  */
+}
+html{
+    font-size: 62.5%;
+    /* defaut font-size of browser is 16px. 16 x 0.625 = 10 => 1em = 1rem = 10px */
+}
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--gray-light);
+    background-color: var(--white);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.wapper{
+    max-width: var(--wrapper);
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    max-width: var(--container);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
