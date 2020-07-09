@@ -111,6 +111,9 @@
 .btn--primary{
     background-color: var(--primary-color);
 }
+.btn--rounded {
+    border-radius: 5rem;
+}
 .btn--icon i{
     margin-left: 1rem;
     color: inherit;
@@ -153,4 +156,109 @@
         margin-bottom: 2.5rem;
 
     }
+}
+
+.about__inner{
+    position: relative;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+@media screen and (max-width: 767px){
+    .about__inner{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+.about__flower1{
+    position: absolute;
+    max-width: 13.5rem;
+    top: 0;
+    left: 0;
+}
+.about__flower2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    max-width: 7rem;
+    transform: translateY(-50%);
+}
+.about__content{
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and(max-width: 767px){
+    .about__content{
+        max-width: 72%;
+    }
+}
+.about__content img {
+    margin: 0 auto 4rem;
+    max-width: 8rem;
+}
+.about__content h3{
+    text-transform: uppercase;
+    color: var(--gray-light);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+/*Heading*/
+.heading {
+    margin-bottom: 7rem;
+  }
+.heading__title {
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    margin-bottom: 4rem;
+    color: var(--black)
+}
+.heading__desc {
+    color: var(--gray-light);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+/* about list */
+.about__list{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.about__item{
+    width: 24.8%;
+    position: relative;
+}
+@media screen and (max-with: 1023px){
+    .about__item{
+        width: 49.6%;
+    }
+}
+@media screen and (max-width: 767px){
+    .about__item{
+        width: 100%;
+    }
+}
+.about__item:hover .about__item-content{
+    opacity: 1;
+    visibility: visible;
+}
+.about__item-content{
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--secondary-font);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
 }
