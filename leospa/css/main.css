@@ -564,3 +564,13 @@ img.quotes__client{
         padding: 2rem;
     }
 }
+.blog .popular__link .title{
+    margin-top: 1.5rem;
+}
+
+.blog .category{
+    text-transform: uppercase;
+    color: var(--gray-dark);
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+}
