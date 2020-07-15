@@ -472,3 +472,95 @@ img.quotes__client{
         object-fit: cover;
     }
 }
+.booking{
+    display: flex;
+    background-color: var(--bg-block);
+}
+.booking__image{
+    width: 40%;
+}
+.booking__image img{
+    object-fit: cover;
+}
+.booking__form{
+    width: 60%;
+    padding: 10rem;
+}
+
+.form-group input, .form-group select, .form-single input{
+    text-transform: uppercase;
+    color: var(--gray-light);
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding: 1.5rem 0;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    outline: none;
+    width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: var(--primary-font);
+}
+.form-group .custom-input{
+    width: 50%;
+}
+.form-group .custom-input input{
+    width: 100%;
+}
+.form-single input{
+    width: 100%;
+}
+.booking__form input::-webkit-inner-spin-button,
+.booking__form input::-webkit-outer-spin-button,
+.booking__form select::-webkit-inner-spin-button,
+.booking__form select::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.booking .form-group{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.booking .form-group .custom-input,
+.booking .form-group input,
+.booking .form-group select{
+    width: calc(50% - 1rem);
+}
+.booking .custom-input{
+    position: relative;
+}
+.booking .form-group .custom-input input::-webkit-calendar-picker-indicator{
+    -webkit-appearance: none;
+    display: none;
+}
+.booking .form-group .custom-input i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.custom-input{
+    width: calc(50% - 1rem);
+}
+.custom-input input{
+    width: 100% !important;
+}
+.booking .form-single {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+@media screen and (max-width: 1023px){
+    .booking{
+        flex-direction: column;
+    }
+    .booking > * {
+        width: 100%;
+    }
+    .booking__form{
+        padding: 2rem;
+    }
+}
